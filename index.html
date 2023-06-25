@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vehiclespeed</title>
+    </head>
+    <body>
+        <h1>Challenge2</h1>
+            <label for="speedTest">Vehiclespeed; </label>
+            <input type="number" id="speedTest">
+            <button onclick="speedSensor()">Test your speed</button>
+
+        <script>
+        function speedSensor(){
+            const speedCalculator = document.getElementById("speedTest");
+            const speed = parseInt(speedCalculator.value)
+
+
+const speedLimit = 70;// sets the speed limit to 70 using the const keyword since its constant
+const demeritPoint = 5;//This is the speed per kilometers per hour past the speed limit from which demerit points will be awarded 
+
+
+if(speed <= speedLimit){
+    alert("okay");
+}else{
+    let demeritPoints = Math.floor((speed-speedLimit)/demeritPoint);//here we are calculating to find out how many points will be awarded if the driver is overspeeding
+
+    if(demeritPoints == 1){//sets the condition for every point and the message to be shown.
+        alert("Points: 1");
+    }else if(demeritPoints == 2){
+        alert("Points: 2");
+    }else if(demeritPoints == 3){
+        alert("Points: 3");
+    }else if(demeritPoints == 4){
+        alert("Points: 4");
+    }else if(demeritPoints == 5){
+        alert("Points: 5");
+    }else if(demeritPoints == 6){
+        alert("Points: 6");
+    }else if(demeritPoints == 7){
+        alert("Points: 7");
+    }else if(demeritPoints == 8){
+        alert("Points: 8");
+    }else if(demeritPoints == 9){
+        alert("Points: 9");
+    }else if(demeritPoints == 10){
+        alert("Points: 10");
+    }else if(demeritPoints == 11){
+        alert("Points: 11");
+    }else if(demeritPoints == 12){
+        alert("WARNING MAX POINT REACHED: 12!");
+    }else{
+        alert("Your Licence Is Suspended!");
+    }
+}
+}
+        </script>
+    </body>
+</html>
