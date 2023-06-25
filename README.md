@@ -1,4 +1,4 @@
-# wk1-code# WK1-Code-Challenge.
+# wk1-code
 
 # Description
 - This is a code challenge meant to test on skills acquired in the first week of this Phase.
@@ -12,7 +12,7 @@
 
 - Clone the repo by using the following to create a copy on your local machine:
 
-  - git clone this project
+  - git clone  https://github.com/shukri26/wk1-code.git
   
 - Change directory to the repo folder:
 
